@@ -29,5 +29,5 @@ Bring back the old Blinkenlights to Mate Light.
 
 * [Blinkenlights](http://blinkenlights.net/)
 * [LittleLights](http://littlelights.de/)
-* [BLM on BlinkenMini](http://blinkenmini.schuermans.info/software.en.html)
-* [BLM on BlinkenArea](http://oldwiki.blinkenarea.org/bin/view/Blinkenarea/BlinkenLightsMovie)
+* [blm on BlinkenMini](http://blinkenmini.schuermans.info/software.en.html)
+* [blm on BlinkenArea](http://oldwiki.blinkenarea.org/bin/view/Blinkenarea/BlinkenLightsMovie)
