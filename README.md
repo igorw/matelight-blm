@@ -16,7 +16,7 @@ Bring back the old Blinkenlights to Mate Light.
 
 ## Usage
 
-To render a blm, just tell `matelight-blm` which matelight udp endpoint to
+To render a blm, just tell `matelight-blm` which Mate Light udp endpoint to
 contact.
 
     $ bin/matelight-blm matelight.cbrp3.c-base.org:1337 162-blms/allyourbase.blm
@@ -46,3 +46,5 @@ If you want the animation to loop, you can use the `-l` parameter.
 * [LittleLights](http://littlelights.de/)
 * [blm on BlinkenMini](http://blinkenmini.schuermans.info/software.en.html)
 * [blm on BlinkenArea](http://oldwiki.blinkenarea.org/bin/view/Blinkenarea/BlinkenLightsMovie)
+* [Mate Light](https://github.com/jaseg/matelight)
+* [Mate Light Emulator](https://github.com/sodoku/matelightemu)
