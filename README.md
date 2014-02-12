@@ -33,6 +33,13 @@ If you want the animation to loop, you can use the `-l` parameter.
 * love_berlin
 * pacman_saga
 
+## Credits
+
+* All examples in the 162-blms folder are from LittleLights, many of which
+  ran on the original installation in Haus des Lehrers.
+
+* The docs in the doc folder are from BlinkenMini.
+
 ## Resources
 
 * [Blinkenlights](http://blinkenlights.net/)
