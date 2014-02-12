@@ -1,0 +1,36 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/../vendor/autoload.php';
+require __DIR__.'/../vendor/docopt/docopt/src/docopt.php';
+
+// blinkenlights is 18x8
+// mate light is 40x16
+
+$doc = <<<DOC
+Bring back the old Blinkenlights to Mate Light.
+
+Usage:
+  matelight-blm [-w] [--] <host> <file>
+  matelight-blm (-h | --help)
+
+Options:
+  -h --help         Show this screen.
+  -w                Widescreen display (default is centered).
+
+DOC;
+
+$args = Docopt\docopt($doc);
+
+$host = $args['<host>'];
+$file = $args['<file>'];
+$render_row = $args['-w'] ? 'igorw\blm\render_row_wide' : 'igorw\blm\render_row_centered';
+
+$frames = igorw\blm\parse(file_get_contents($file));
+
+$conn = stream_socket_client('udp://'.$host);
+foreach ($frames as $frame) {
+    fwrite($conn, igorw\blm\render($frame, $render_row));
+    usleep($frame->duration * 1000);
+}
+fclose($conn);

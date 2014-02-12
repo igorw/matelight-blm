@@ -1,0 +1,31 @@
+Blinkenlights Movie (*.blm) (partly copied from http://www.blinkenlights.de/)
+
+A Blinkenlights Movie is a simple text file that you can create with any text editor. The file starts with a single identifier line (# BlinkenLights Movie <X-Size>x<Y-Size>) and then contains all the images of your movie (frames) one after another. Each frame starts with an @ followed by its delay time in milliseconds. @1000 equals 1 second. Following this comes the image. Every image consists of Y-Size lines with X-Size digits each. A 1 represents a switched-on lamp while a 0 stands for complete darkness. 
+
+For instance:
+
+# BlinkenLights Movie 18x8
+
+@200
+000000000000000000
+000011100011100000
+000111110111110000
+000111111111110000
+000011111111100000
+000000111110000000
+000000001000000000
+000000000000000000
+
+@800
+000011100011100000
+000111110111110000
+001111111111111000
+001111111111111000
+000111111111110000
+000011111111100000
+000000111110000000
+000000001000000000
+
+Implementation details
+
+You may put any number of comment lines between the identification line and the first frame. Every comment line must be preceded by an # character. The end of line may be a CR (ASCII 13), a LF (ASCII 10) or CRLF (ASCII 13 + ASCII 10). We recommend saving your file with LF. Two frames may be seperated by one or more empty lines.
