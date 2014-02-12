@@ -16,7 +16,14 @@ Bring back the old Blinkenlights to Mate Light.
 
 ## Usage
 
-    $ bin/matelight-blm 127.0.0.1:1337 162-blms/allyourbase.blm
+To render a blm, just tell `matelight-blm` which matelight udp endpoint to
+contact.
+
+    $ bin/matelight-blm matelight.cbrp3.c-base.org:1337 162-blms/allyourbase.blm
+
+If you want the animation to loop, you can use the `-l` parameter.
+
+    $ bin/matelight-blm matelight.cbrp3.c-base.org:1337 162-blms/yin_yang.blm -l
 
 ## Picks
 
@@ -24,6 +31,7 @@ Bring back the old Blinkenlights to Mate Light.
 * illuminati
 * invasion
 * love_berlin
+* pacman_saga
 
 ## Resources
 
