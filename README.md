@@ -25,6 +25,8 @@ If you want the animation to loop, you can use the `-l` parameter.
 
     $ bin/matelight-blm matelight.cbrp3.c-base.org:1337 162-blms/yin_yang.blm -l
 
+Alternate domain: `ml.jaseg.net:1337`.
+
 ## Picks
 
 * allyourbase
